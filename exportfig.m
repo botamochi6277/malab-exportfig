@@ -6,7 +6,7 @@ function exportfig(filename,format, m, type )
 % filename : filename without format name.
 % format : image format including .eps, .pdf, .tiff, etc.
 % m : size or aspect ratio of image.
-% type: export format; "TeX", "TeX*", "Slides" and "Poster"
+% type: export format; 'TeX', 'TeX*', 'Slides' and 'Poster'.
 %
 % exsample
 % exportfig('./fig', 'eps', [800 600]);
@@ -14,7 +14,7 @@ function exportfig(filename,format, m, type )
 %
 % See also PRINT, SET, GET.
 
-% In LaTeX documants
+% In LaTeX documents
 % \begin{figure}[tbp]
 % 	\centering
 % 	\includegraphics[width=\linewidth]{fig.pdf}
@@ -120,7 +120,7 @@ if iscell(t)
         set(x{i},'FontSize',lsize);
         set(y{i},'FontSize',lsize);
         set(z{i},'FontSize',lsize);
-        
+
         % Change small font size and linewidth
         n = size(ax(i).Children);
         for j = 1:n(1)
