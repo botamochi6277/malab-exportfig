@@ -1,4 +1,4 @@
-function exportfig(filename,format, m, type )
+function exportfig(filename, format, m, type )
 % EXPORTFIG - Export figure for articles, slides, etc.
 % exportfig(filename,format, m)
 % exportfig(filename,format, m, type )
@@ -13,15 +13,6 @@ function exportfig(filename,format, m, type )
 % exportfig('./fig', 'pdf', [4 3],'TeX');
 %
 % See also PRINT, SET, GET.
-
-% In LaTeX documents
-% \begin{figure}[tbp]
-% 	\centering
-% 	\includegraphics[width=\linewidth]{fig.pdf}
-% 	\caption{default
-% 	\label{default}
-% 	}
-% \end{figure}
 
 if isvector(m)
     if numel(m) ~= 2
